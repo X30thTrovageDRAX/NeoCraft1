@@ -1,0 +1,11 @@
+//If this file is deleted, a new set of default configs will be generated.
+
+//Registers a preset. First argument is name, second is the image name, third is a description.
+NC1 = registerPreset("NeoCraft 1", "images/NC1", "Classic Sky Factory world type starting on a tree in the void")
+NC1.registerDimension(0, "NC1/tree")
+NC1.registerDimension(-1, "NC1/tree")
+NC1.addInitialPlayerFunction("triumph:start_standard")
+NC1.disableNetherPortal()
+
+setAsDefaultWorldType()
+printDocumentation(false)
